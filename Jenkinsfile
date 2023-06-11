@@ -16,8 +16,8 @@ pipeline {
     }
     stage('Push') {
         steps {
-        sh 'sudo docker tag flaskapp:latest minhalzafar/flaskapp:latest'
-        sh 'sudo docker push minhalzafar/flaskapp:latest'
+        sh 'sudo docker tag flaskapp:latest hammu/flaskapp:latest'
+        sh 'sudo docker push hammu/flaskapp:latest'
         }
     }
     stage('Execute') {
